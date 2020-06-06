@@ -13,7 +13,7 @@ class String
   def exclamation?
 
   end
-binding.pry
+# binding.pry
   def count_sentences
 
   end
