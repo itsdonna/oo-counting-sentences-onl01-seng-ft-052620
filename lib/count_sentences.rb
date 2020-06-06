@@ -17,6 +17,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!/]).reject{|sentence| sentece.empy?}.count
+    size_array = self.split(/[.!?]/).reject(&:empty?).size
   end
 end
