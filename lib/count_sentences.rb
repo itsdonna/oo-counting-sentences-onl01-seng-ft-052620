@@ -18,7 +18,8 @@ class String
 
   def count_sentences
     
-    sentences = self.gsub(".","142").gsub("?","142").gsub("!","142").split("142").reject
+    sentences = self.gsub(".","142").gsub("?","142").gsub("!","142").split("142").reject{|sentence| sentence = ""}
+    
     
     binding.pry
   end
